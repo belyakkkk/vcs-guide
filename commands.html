@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Команды Git и SVN | VCS Guide</title>
+  <link rel="stylesheet" href="css/marx.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <header>
+    <h1>VCS Guide</h1>
+    <nav>
+      <button class="burger" aria-label="Меню">☰</button>
+      <ul class="nav-list">
+  <li><a href="index.html">Главная</a></li>
+  <li><a href="history.html">История</a></li>
+  <li><a href="git.html">Git</a></li>
+  <li><a href="svn.html">SVN</a></li>
+  <li><a href="comparison.html">Сравнение</a></li>
+  <li><a href="commands.html">Команды</a></li>
+  <li><a href="workflow.html">Процесс</a></li>
+  <li><a href="video.html">Видео</a></li>
+  <li><a href="contact.html">Контакты</a></li>
+</ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <main>
+  <h2>Шпаргалка команд Git и SVN</h2>
+  
+  <p>Самые важные команды для ежедневной работы с системами контроля версий.</p>
+
+  <h3>Основные команды Git</h3>
+  <table>
+    <caption>Команды Git</caption>
+    <thead>
+      <tr>
+        <th scope="col">Команда</th>
+        <th scope="col">Описание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>git init</code></td>
+        <td>Создать новый репозиторий в текущей папке</td>
+      </tr>
+      <tr>
+        <td><code>git clone URL</code></td>
+        <td>Склонировать удалённый репозиторий</td>
+      </tr>
+      <tr>
+        <td><code>git status</code></td>
+        <td>Показать состояние файлов</td>
+      </tr>
+      <tr>
+        <td><code>git add FILE</code></td>
+        <td>Добавить файл в индекс (staging area)</td>
+      </tr>
+      <tr>
+        <td><code>git commit -m "сообщение"</code></td>
+        <td>Зафиксировать изменения</td>
+      </tr>
+      <tr>
+        <td><code>git push</code></td>
+        <td>Отправить коммиты на удалённый сервер</td>
+      </tr>
+      <tr>
+        <td><code>git pull</code></td>
+        <td>Получить изменения с сервера</td>
+      </tr>
+      <tr>
+        <td><code>git branch</code></td>
+        <td>Показать список веток</td>
+      </tr>
+      <tr>
+        <td><code>git checkout -b new-branch</code></td>
+        <td>Создать новую ветку и переключиться на неё</td>
+      </tr>
+      <tr>
+        <td><code>git merge branch</code></td>
+        <td>Слить указанную ветку в текущую</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Основные команды SVN</h3>
+  <table>
+    <caption>Команды SVN</caption>
+    <thead>
+      <tr>
+        <th scope="col">Команда</th>
+        <th scope="col">Описание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>svn checkout URL</code></td>
+        <td>Получить рабочую копию из репозитория</td>
+      </tr>
+      <tr>
+        <td><code>svn update</code></td>
+        <td>Обновить рабочую копию с сервера</td>
+      </tr>
+      <tr>
+        <td><code>svn status</code></td>
+        <td>Показать состояние рабочей копии</td>
+      </tr>
+      <tr>
+        <td><code>svn add FILE</code></td>
+        <td>Добавить новый файл под версионный контроль</td>
+      </tr>
+      <tr>
+        <td><code>svn commit -m "сообщение"</code></td>
+        <td>Зафиксировать изменения на сервере</td>
+      </tr>
+      <tr>
+        <td><code>svn copy URL URL</code></td>
+        <td>Создать ветку или метку</td>
+      </tr>
+      <tr>
+        <td><code>svn merge URL</code></td>
+        <td>Слить изменения из другой ветки</td>
+      </tr>
+      <tr>
+        <td><code>svn revert FILE</code></td>
+        <td>Отменить локальные изменения в файле</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Полезные ресурсы</h3>
+  <ul>
+    <li><a href="https://git-scm.com/book/ru/v2" target="_blank" rel="noopener">Pro Git (книга на русском)</a></li>
+    <li><a href="https://svnbook.red-bean.com/" target="_blank" rel="noopener">Официальная документация SVN</a></li>
+  </ul>
+</main>
+
+    <aside>
+      <h3>Быстрые ссылки</h3>
+      <ul>
+        <li><a href="comparison.html">Git vs SVN</a></li>
+        <li><a href="commands.html">Шпаргалка команд</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>© 2026, VCS Guide</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

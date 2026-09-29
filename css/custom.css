@@ -1,0 +1,93 @@
+/* ============================================
+   MOBILE-FIRST: базовые стили для мобильных
+   ============================================ */
+
+/* Раскладка: одна колонка на мобильных */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Бургер: виден на мобильных */
+.burger {
+  display: block;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+/* Меню: вертикальное, скрыто по умолчанию на мобильных */
+.nav-list {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem;
+}
+
+/* Открытое меню */
+.nav-list.open {
+  display: flex;
+}
+
+/* ============================================
+   ПЛАНШЕТЫ И ДЕСКТОПЫ (≥ 768px)
+   ============================================ */
+@media (min-width: 768px) {
+  /* Две колонки */
+  .layout {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /* Бургер скрываем */
+  .burger {
+    display: none;
+  }
+
+  /* Меню горизонтальное, всегда видно */
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+/* Шапка: заголовок слева, меню справа */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Кнопка-бургер — заметная */
+.burger {
+  display: block;
+  font-size: 2rem;
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #333;
+}
+
+/* На десктопе бургер скрыт */
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}

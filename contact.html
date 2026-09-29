@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | VCS Guide</title>
+  <link rel="stylesheet" href="css/marx.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <header>
+    <h1>VCS Guide</h1>
+    <nav>
+      <button class="burger" aria-label="Меню">☰</button>
+      <ul class="nav-list">
+  <li><a href="index.html">Главная</a></li>
+  <li><a href="history.html">История</a></li>
+  <li><a href="git.html">Git</a></li>
+  <li><a href="svn.html">SVN</a></li>
+  <li><a href="comparison.html">Сравнение</a></li>
+  <li><a href="commands.html">Команды</a></li>
+  <li><a href="workflow.html">Процесс</a></li>
+  <li><a href="video.html">Видео</a></li>
+  <li><a href="contact.html">Контакты</a></li>
+</ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <main>
+<h2>Обратная связь</h2>
+
+<p>Есть вопросы или предложения по сайту? Напишите нам.</p>
+
+<form>
+  <label for="name">Ваше имя:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="topic">Тема:</label>
+  <select id="topic" name="topic">
+    <option value="git">Вопрос по Git</option>
+    <option value="svn">Вопрос по SVN</option>
+    <option value="site">Предложение по сайту</option>
+    <option value="other">Другое</option>
+  </select>
+
+  <label for="message">Сообщение:</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+  <button type="submit">Отправить</button>
+</form>
+
+<h3>Другие способы связи</h3>
+<ul>
+  <li>Email: <a href="mailto:info@vcs-guide.ru">info@vcs-guide.ru</a></li>
+  <li>GitHub: <a href="https://github.com/" target="_blank" rel="noopener">github.com/vcs-guide</a></li>
+</ul>
+</main>
+
+    <aside>
+      <h3>Быстрые ссылки</h3>
+      <ul>
+        <li><a href="comparison.html">Git vs SVN</a></li>
+        <li><a href="commands.html">Шпаргалка команд</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>© 2026, VCS Guide</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

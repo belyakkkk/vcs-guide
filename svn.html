@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVN — централизованная VCS | VCS Guide</title>
+  <link rel="stylesheet" href="css/marx.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <header>
+    <h1>VCS Guide</h1>
+    <nav>
+      <button class="burger" aria-label="Меню">☰</button>
+      <ul class="nav-list">
+  <li><a href="index.html">Главная</a></li>
+  <li><a href="history.html">История</a></li>
+  <li><a href="git.html">Git</a></li>
+  <li><a href="svn.html">SVN</a></li>
+  <li><a href="comparison.html">Сравнение</a></li>
+  <li><a href="commands.html">Команды</a></li>
+  <li><a href="workflow.html">Процесс</a></li>
+  <li><a href="video.html">Видео</a></li>
+  <li><a href="contact.html">Контакты</a></li>
+</ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <main>
+  <h2>SVN — централизованная система контроля версий</h2>
+  
+  <p>Subversion (SVN) — централизованная система контроля версий, созданная компанией CollabNet в 2000 году. Она пришла на смену CVS и долгое время была стандартом в корпоративной разработке.</p>
+
+  <h3>Ключевые особенности SVN</h3>
+  <ul>
+    <li><strong>Централизация:</strong> единый сервер хранит всю историю проекта</li>
+    <li><strong>Простота:</strong> линейная модель работы, понятная новичкам</li>
+    <li><strong>Атомарные коммиты:</strong> изменения применяются целиком или не применяются вовсе</li>
+    <li><strong>Версионирование каталогов:</strong> можно версионировать папки, переименования и метаданные</li>
+  </ul>
+
+  <h3>Структура репозитория SVN</h3>
+  <p>Традиционно репозиторий SVN организован в три каталога:</p>
+  <ul>
+    <li><code>trunk</code> — основная линия разработки</li>
+    <li><code>branches</code> — ветки для параллельной работы</li>
+    <li><code>tags</code> — метки релизов (фиксированные версии)</li>
+  </ul>
+
+  <h3>Основные понятия</h3>
+  <dl>
+    <dt><strong>Рабочая копия (working copy)</strong></dt>
+    <dd>Локальная копия файлов, с которой работает разработчик</dd>
+    
+    <dt><strong>Ревизия (revision)</strong></dt>
+    <dd>Глобальный номер версии репозитория (например, r1234)</dd>
+    
+    <dt><strong>Обновление (update)</strong></dt>
+    <dd>Получение изменений с сервера в рабочую копию</dd>
+    
+    <dt><strong>Фиксация (commit)</strong></dt>
+    <dd>Отправка локальных изменений на сервер</dd>
+  </dl>
+
+  <h3>Где используется SVN сегодня</h3>
+  <ul>
+    <li>В крупных корпорациях с унаследованными проектами</li>
+    <li>В проектах с жёсткой централизацией управления</li>
+    <li>В командах, где важна простая линейная история</li>
+  </ul>
+</main>
+
+    <aside>
+      <h3>Быстрые ссылки</h3>
+      <ul>
+        <li><a href="comparison.html">Git vs SVN</a></li>
+        <li><a href="commands.html">Шпаргалка команд</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>© 2026, VCS Guide</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
